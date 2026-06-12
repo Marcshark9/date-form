@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Important Question 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="card">
+        <img class="gif" src="https://i.redd.it/1ym09ihzkxwg1.gif">
+        <h1>Will you go on a date with me? 🥹</h1>
+
+        <div class="buttons">
+            <button id="yesBtn">YES 💖</button>
+            <button id="noBtn">no 😭</button>
+        </div>
+
+        <form id="dateForm" action="PUT_FORMSPREE_LINK_HERE" method="POST" hidden>
+            <h2>Yippeee! Pick the details 💕</h2>
+
+            <input type="hidden" name="answer" value="YES">
+
+            <label>Date</label>
+            <input type="date" name="date" required>
+
+            <label>Time</label>
+            <input type="time" name="time" required>
+
+            <label>Plan</label>
+            <select name="plan" required>
+                <option>Cafe ☕</option>
+                <option>movie ig?</option>
+                <option>Ice cream ✨</option>
+                <option>Build an epic lego set ✨</option>
+                <option>stare into the depths of each others souls for 8 hours</option>
+            </select>
+            <label>Do you want me to pick you up?</label>
+            <select name="lift" required>
+                <option>Yes please 🚗</option>
+                <option>No thanks, I’ll meet you there ✨</option>
+            </select>
+            <label>Message</label>
+            <textarea name="message" placeholder="Any requests?"></textarea>
+
+            <button type="submit">Send 💌</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
